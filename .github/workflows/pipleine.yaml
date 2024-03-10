@@ -23,7 +23,7 @@ jobs:
         run: |
             pwd
             ls
-            cd /home/ubuntu/uptime-kuma
+            # cd /home/ubuntu/uptime-kuma
             git pull
             npm run setup
 
