@@ -26,6 +26,7 @@ jobs:
             # cd /home/ubuntu/uptime-kuma
             git checkout master
             git pull
+            git checkout master
             npm run setup
 
               '
