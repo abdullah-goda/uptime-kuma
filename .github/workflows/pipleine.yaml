@@ -21,12 +21,6 @@ jobs:
             USER_NAME: ${{secrets.USER_NAME}}
 
         run: |
-            pwd
-            ls
-            cd ~/uptime-kuma
-            pwd
-            ls
-            git pull origin main
             npm run setup
 
               '
