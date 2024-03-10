@@ -22,7 +22,6 @@ jobs:
 
         run: |
             ls
-            cd ~/uptime-kuma
             git pull
             npm run setup
 
