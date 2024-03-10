@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: build
-        run: echo: Building......
+        run: echo "Building......"
       - uses: actions/checkout@v2 
         
       - name: Deploy
