@@ -27,7 +27,7 @@ jobs:
             sudo apt install nodejs -y
             node -v
             npm install npm@9
-            git clone https://github.com/abdullah-goda/uptime-kuma.git
+            git clone https://github.com/louislam/uptime-kuma.git
             cd uptime-kuma
             npm run setup
 
