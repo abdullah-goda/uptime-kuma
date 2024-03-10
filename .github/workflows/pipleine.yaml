@@ -23,7 +23,7 @@ jobs:
         run: |
             pwd
             ls
-            cd uptime-kuma
+            cd ~/uptime-kuma
             pwd
             ls
             git pull origin main
