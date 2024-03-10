@@ -21,14 +21,15 @@ jobs:
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
               # Now we have got the access of EC2 and we will start the deploy .
-          sudo apt update
-          sudo apt upgrade -y
-          curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-          sudo apt install nodejs -y
-          node -v
-          git clone https://github.com/louislam/uptime-kuma.git
-          cd uptime-kuma
-          npm install npm@9
-          npm run setup
+            sudo apt update
+            sudo apt upgrade -y
+            curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+            sudo apt install nodejs -y
+            node -v
+            npm install npm@9
+            git clone https://github.com/louislam/uptime-kuma.git
+            cd uptime-kuma
+            npm run setup
+            node server/server.js
 
               '
