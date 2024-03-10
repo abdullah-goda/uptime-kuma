@@ -24,6 +24,7 @@ jobs:
             pwd
             ls
             # cd /home/ubuntu/uptime-kuma
+            git checkout master
             git pull
             npm run setup
 
