@@ -21,6 +21,7 @@ jobs:
             USER_NAME: ${{secrets.USER_NAME}}
 
         run: |
+            pwd
             ls
             git pull
             npm run setup
