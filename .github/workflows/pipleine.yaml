@@ -21,7 +21,8 @@ jobs:
             USER_NAME: ${{secrets.USER_NAME}}
 
         run: |
-            cd uptime-kuma
+            ls
+            cd ~/uptime-kuma
             git pull
             npm run setup
 
